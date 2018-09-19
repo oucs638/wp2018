@@ -1,12 +1,13 @@
-#leftpart {
+#leftwords {
     min-width: 450px;
     max-width: 500px;
+    color: #ea7500;
+    background-color: #000000;
 }
-#leftpart h1{
-    color: orange;
-    background-color: black;
+#leftwords h1{
     text-align: center;
+    font-size: 72px;
 }
-#leftpart p{
+#leftwords p{
     font-size: 48px;
 }
