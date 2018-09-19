@@ -1,7 +1,9 @@
+#leftpart {
+    min-width: 450px;
+    max-width: 500px;
+}
 h1{
     color: orange;
     background-color: black;
     text-align: center;
-    min-width: 500px;
-    max-width: 600px;
 }
