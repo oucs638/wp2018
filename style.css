@@ -2,8 +2,11 @@
     min-width: 450px;
     max-width: 500px;
 }
-h1{
+#leftpart h1{
     color: orange;
     background-color: black;
     text-align: center;
+}
+#leftpart p{
+    font-size: 48px;
 }
