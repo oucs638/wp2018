@@ -1,6 +1,8 @@
 /* 1920*1080 */
 body{
     font-size: 16px;
+    color: white;
+    background-image: url("../resources/images/space.jpg")
 }
 /********************************/
 #header{
