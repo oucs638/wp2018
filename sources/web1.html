@@ -7,8 +7,9 @@
     <link href="style1.css" type="text/css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="script1.js"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
 
 <body>
@@ -36,48 +37,43 @@
 
             <a class="header_topic" id="header_topic_1" class='dropdown-trigger btn' href='#' data-target='dropdown1'>HOME</a>
             <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">three</a></li>
-                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">one</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">two</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">three</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">four</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">five</a></li>
             </ul>
             <a class="header_topic" id="header_topic_2" class='dropdown-trigger btn' href='#' data-target='dropdown2'>PROFILE</a>
             <ul id='dropdown2' class='dropdown-content'>
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">three</a></li>
-                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">one</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">two</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">three</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">four</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">five</a></li>
             </ul>
             <a class="header_topic" id="header_topic_3" class='dropdown-trigger btn' href='#' data-target='dropdown3'>PROJECT</a>
             <ul id='dropdown3' class='dropdown-content'>
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">three</a></li>
-                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">one</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">two</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">three</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">four</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">five</a></li>
             </ul>
             <a class="header_topic" id="header_topic_4" class='dropdown-trigger btn' href='#' data-target='dropdown4'>CONTACT</a>
             <ul id='dropdown4' class='dropdown-content'>
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">three</a></li>
-                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">one</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">two</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">three</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">four</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">five</a></li>
             </ul>
             <a class="header_topic" id="header_topic_5" class='dropdown-trigger btn' href='#' data-target='dropdown5'>MORE</a>
             <ul id='dropdown5' class='dropdown-content'>
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
-                <li class="divider" tabindex="-1"></li>
-                <li><a href="#!">three</a></li>
-                <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-                <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">one</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">two</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">three</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">four</a></li>
+                <li><a href="#!" class="drop-text" style="color: white">five</a></li>
             </ul>
             <!--
             <h1 class="header_topic" id="header_topic_1">HOME</h1>
@@ -147,8 +143,9 @@
     </div>
 
     <script>
+        $(".header_topic").dropdown();
         $(document).ready(function () {
-            $("#page0").css("display", "block");
+            //$("#page0").css("display", "block");
             //$("#page1").css("display", "none");
             var counter = 0;
             var c = 0;
@@ -169,16 +166,25 @@
                 }
             }, 50);
 
-        });
+            //$(".drop-text").html("style", "color: white");
+            $(".drop-text").css("background", "black");
+            $(".drop-text").css("border", "groove");
+            $(".drop-text").css("border-width", "1px 1px 1px 1px");
 
+            $(".header_topic").click(function () {
+                $(this).open();
+            })
+        });
+        /*
         $('.dropdown-trigger').dropdown();
         $(document).ready(function(){
             $(".header_topic").click(function(){
                 $(this).open();
             })
         })
+        */
     </script>
-    
+
     <!-- <script type="text/javascript" src="script1.js"></script> -->
 
 </body>
