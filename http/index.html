@@ -4,24 +4,25 @@
     <title>HTTP & Ajax</title>
   </head>
   <body>
-    <form action="get.php" method="get">
-      first name: <input type="text" name="fname"><br>
-      last name: <input type="text" name="lname"><br>
-      <button type="submit">submit via get</button>
+    <button id="list_btn" type="submit">list all students</button>
+    <h1 id="list_dsp"></h1>
+    <form id="search_form">
+      student ID: <input type="text" name="student_ID"><br>
+      <button id="search_btn" type="submit">search specific student</button>
+      <h1 id="search_display"></h1>
     </form>
-    <form action="post.php" method="post">
-      first name: <input type="text" name="fname"><br>
-      last name: <input type="text" name="lname"><br>
-      <button type="submit">submit via post</button>
+    <form id="add_form">
+      student ID: <input type="text" name="student_ID"><br>
+      student name: <input type="text" name="student_name"><br>
+      <button id="add_btn" type="submit">add new student</button>
     </form>
-    <form id="ajax-form">
-      first name: <input type="text" name="fname"><br>
-      last name: <input type="text" name="lname"><br>
-      <button type="submit">submit via ajax</button>
-      <h1 id="ajax-output"></h1>
+    <form id="delete_form">
+      student ID: <input type="text" name="student_ID"><br>
+      <button id="delete_btn" type="submit">delete specific student</button>
     </form>
-    <p><a href="chat/index.html">chat demo</a></p>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="index.js"></script>
+    <script src="student.js"></script>
   </body>
 </html>
+
+

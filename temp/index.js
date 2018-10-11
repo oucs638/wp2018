@@ -1,6 +1,6 @@
 // if you edit your js file,
 //   make sure your browser does not cache it
-/*
+
 $('#ajax-form button[type=submit]').click((event) => {
   event.preventDefault()
   // no need if button type is not `submit`,
@@ -15,5 +15,3 @@ $('#ajax-form button[type=submit]').click((event) => {
   setTimeout(() => $('#ajax-output').html('loading'), 3000)
   // try to modify the timeout
 })
-*/
-
