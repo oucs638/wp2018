@@ -1,0 +1,13 @@
+.leftwords {
+    width: 30%;
+    height: 100%;
+    color: #ea7500;
+    background-color: #000000;
+    text-align: center;
+}
+.leftwords h1{
+    font-size: 36px;
+}
+.leftwords p{
+    font-size: 24px;
+}

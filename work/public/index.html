@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTTP & Ajax</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <button id="list_btn" type="submit">list all students</button>
+    <div id="list_dsp"><p id="list_dsp_content"></p></div>
+    <form id="search_form">
+      studentID: <input type="text" name="student_ID"><input type="text" name="student_ID_1"><br>
+      <button id="search_btn" type="submit">search specific student</button>
+      <div id="search_dsp"><p id="search_dsp_content"></p></div>
+    </form>
+    <form id="add_form">
+      studentID: <input type="text" name="student_ID" id="test_dsp"><br>
+      studentname: <input type="text" name="student_name" id="test_dsp_1"><br>
+      <button id="add_btn" type="submit">add new student</button>
+    </form>
+    <form id="delete_form">
+      studentID: <input type="text" name="student_ID"><br>
+      <button id="delete_btn" type="submit">delete specific student</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
